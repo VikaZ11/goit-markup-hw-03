@@ -162,7 +162,7 @@ body {
 /* ----------------------------Герой---------------------------- */
 .hero {
   background-color: #2f303a;
-  padding: 200px 237px;
+  padding: 200px 0;
   text-align: center;
 }
 
@@ -175,7 +175,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   width: 696px;
-  height: 120px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -191,8 +190,8 @@ body {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  min-width: 200px;
-  height: 50px;
+  padding: 10px 32px;
+  border: none;
 }
 
 .hero-button:hover,
@@ -219,6 +218,10 @@ body {
   display: flex;
 }
 
+.feature-item {
+  width: 270px;
+}
+
 .feature-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -230,13 +233,11 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
-  max-width: 270px;
 }
 
 .feature .text {
   font-size: 14px;
   line-height: 1.71;
-  max-width: 270px;
 }
 
 /* ----------------------------Чем мы занимаемся---------------------------- */
@@ -272,20 +273,23 @@ body {
   display: flex;
 }
 
+.command-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .command .title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
 .command .cards {
   background-color: #ffffff;
   width: 270px;
-  padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -305,8 +309,19 @@ body {
 }
 
 /* ----------------------------Подвал---------------------------- */
-.logo-footer {
+.footer-logo {
   color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.footer-logo-accent {
+  color: var(--accent-color);
 }
 
 .footer {
@@ -315,20 +330,12 @@ body {
   padding-bottom: 60px;
 }
 
-.logo-position {
-  margin-bottom: 20px;
-}
-
 .footer-adress {
   color: #ffffff;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 6px;
-}
-
-.footer-mail {
-  margin-bottom: 9px;
 }
 
 .footer-link {
@@ -342,6 +349,10 @@ body {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+
+.footer-nav:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* ----------------------------Портфолио------------------------ */
@@ -398,6 +409,7 @@ body {
   text-align: center;
   border-radius: 4px;
   padding: 6px 22px;
+  border: none;
 }
 
 .portfolio-button:hover,
@@ -409,4 +421,5 @@ body {
 .portfolio-description {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
